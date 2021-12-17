@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding:40px 100px;
+    z-index: 10000;
+    transition: 0.6s;
+}
+header .logo
+{
+    position: relative;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 5px;
+    transition: 0.6s;
+}
+header #toggle
+{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+header #toggle:before
+{
+    content: '';
+    position: absolute;
+    top: 7px;
+    width: 100%;
+    height:2px;
+    background: black;
+    font-weight: bold;
+
+}
+header #toggle:after
+{
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    height:2px;
+    background: black;
+    font-weight: bold;
+
+}
+.banner.active header #toggle:before
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}.banner.active header #toggle:after
+ {
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%) rotate(-45deg);
+ }
+.banner
+{
+    position: relative;
+    min-width: 100vh;
+    min-height: 100vh;
+    padding: 100px;
+    background: url("n1.jpg");
+    background-size: cover;
+    display: revert;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 2;
+}
+.banner.active
+{
+    transform: translateX(-400px);
+}
+#navigation
+{
+    position: absolute;
+    top:0;
+    right:-200px;
+    width: 400px;
+    height: 100vh;
+    background: #D8C3A5;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+
+
+}
+#navigation.active
+{
+    right: 0;
+}
+#navigation ul
+{
+    position: relative;
+    display: flex;
+    flex-direction:column ;
+}
+#navigation ul li
+{
+    list-style: none;
+}
+/*ni untuk side menu text*/
+#navigation ul li a
+{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform:uppercase;
+}
+.content
+{
+    max-width:960px;
+    padding-left:1rem;
+    padding-right:1rem;
+    margin:auto;
+    text-align: center;
+
+
+}
+.content h1 {
+    color: white;
+    font-size: 50px;
+    margin-top: 170px;
+}
+.content p
+{
+    color:white;
+    font-size: 1.5rem;
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+.content a
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background:#D8C3A5;
+
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.section-a{
+    padding:20px 0;
+    background-color: white;
+    color: black;
+
+}
+
+.section-b{
+    background:#E98074;
+    color: #ffffff;
+    opacity: 0.65;
+}
+.bannerSignup
+{
+    color: #D8C3A5;
+    background: pink;
+}
