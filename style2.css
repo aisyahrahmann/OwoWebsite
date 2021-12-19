@@ -218,3 +218,47 @@ span.psw {
     text-align: center;
     font-size: 2em;
 }
+
+.loltext {
+    display: inline-block;
+    border-radius: 1px;
+    background-color: #CF9C71;
+    border: none;
+    color:white;
+    text-align: center;
+    font-size: 9px;
+    padding: 15px 23px 25px 15px;
+    width: 900px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .loltext span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .loltext span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .loltext:hover span {
+    padding-right: 25px;
+  }
+  
+  .loltext:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .lolz{
+      padding: 25px 50px 75px 200px;
+  }

@@ -20,17 +20,19 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </style>
 </head>
 <body class="backgroundLg"">
-<div>
-    <a href="logout.php" class="Logout" style="text-align: center">Sign Out </a>
-</div>
-<div>
-    <a href="index.php" class="Logout" >Next </a>
-</div>
+
 <div class="LogoutWelcome">
     <h1 style="color: #f1f1f1">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to Your Pad.</h1>
 
 </div>
-
+<div class = "lolz"> 
+<div class="loltext">
+    <a href="index.php" class="Logout" >Next </a>
+</div>
+<div class="loltext">
+ <a href="logout.php" class="Logout" >Sign Out </a>
+</div>
+</div>
 
 
 </body>
